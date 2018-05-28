@@ -4,6 +4,10 @@ body{
 	width: 1920px;
 	font-family: "open sans", sans-serif;
 }
+ul{
+	list-style: none;
+	display: inline;
+}
 .navbar-header{
 	min-height: 40px;
 	background-color: #f5f7fa;
@@ -31,7 +35,7 @@ ul.navbar-header-contact li{
 
 ul.navbar-header-social li{
 	display: inline;
-		padding: 8px;
+	padding: 8px;
 }
 
 ul.navbar-header-contact li i{
@@ -39,8 +43,8 @@ ul.navbar-header-contact li i{
 }
 
 ul.navbar-header-contact{
- margin-bottom: 0px;
-    padding-left: 15px;
+	margin-bottom: 0px;
+	padding-left: 15px;
 
 }
 ul.navbar-header-social{
@@ -49,8 +53,8 @@ ul.navbar-header-social{
 	padding-right: 17px;
 }
 div.social{
-display: inline;
-float: right;
+	display: inline;
+	float: right;
 }
 
 div.contact{
@@ -71,7 +75,7 @@ ul.nav li a{
 }
 div.search{
 	position:absolute;
-right: 0px;
+	right: 0px;
 }
 div.logo{
 	margin-right: 60px;
@@ -100,17 +104,17 @@ div.search{
 .hero{
 	text-align: center;
 	background-image: url("../img/image.png");
-	min-height: 880px;
+	padding-bottom: 301px;
+	padding-top: 285px;
 }
 .hero h1{
- font-size: 78px;
-  font-family: "Lato";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 1.128;
-  padding-top: 285px;
-  font-weight: 900;
-  letter-spacing: 4.9px;
+	font-size: 78px;
+	font-family: "Lato";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 1.128;
+	font-weight: 900;
+	letter-spacing: 4.9px;
 
 }
 
@@ -118,26 +122,26 @@ div.search{
 	font-family: "Lato";
 	font-size: 24px;
 	padding-top: 4px;
-color: rgb(255, 255, 255);
-opacity: 0.6;
+	color: rgb(255, 255, 255);
+	opacity: 0.6;
 }
 .getStart{
 	font-size: 16px;
 	font-family: "SourceSansPro";
 	color: rgb(255, 255, 255);
 	font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
+	text-transform: uppercase;
+	line-height: 1.2;
 }
 
 .hero button{
-  border-radius: 3px;
-  background-color: rgb(0, 188, 156);
-  box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15);
-    width: 295px;
-  height: 65px;
-  margin-top: 42px;
-  border: none;
+	border-radius: 3px;
+	background-color: rgb(0, 188, 156);
+	box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15);
+	width: 295px;
+	height: 65px;
+	margin-top: 42px;
+	border: none;
 }
 .getStart:hover {
 	color: rgb(0, 188, 156);
@@ -150,81 +154,81 @@ opacity: 0.6;
 }
 .whoWeAre h1{
 	font-size: 44px;
-  font-family: "Lato";
-  color: rgb(80, 106, 133);
-  font-weight: bold;
-  line-height: 1.227;
-  text-align: center;
-  padding-top: 120px;
-  letter-spacing: 1px;
+	font-family: "Lato";
+	color: rgb(80, 106, 133);
+	font-weight: bold;
+	line-height: 1.227;
+	text-align: center;
+	padding-top: 120px;
+	letter-spacing: 1px;
 }
 .whoWeAre p{
 	padding-top: 20px;
 	font-size: 21.5px;
-  font-family: "Lato";
-  color: rgb(80, 106, 133);
-  line-height: 1.5;
-  text-align: center;
+	font-family: "Lato";
+	color: rgb(80, 106, 133);
+	line-height: 1.5;
+	text-align: center;
 }
 .whoWeAre .row h1{
 	font-size: 26px;
-  font-family: "Lato";
-  color: rgb(80, 106, 133);
-  font-weight: bold;
-  line-height: 1.227;
-  padding-top: 0px;
-  text-align: left;
+	font-family: "Lato";
+	color: rgb(80, 106, 133);
+	font-weight: bold;
+	line-height: 1.227;
+	padding-top: 0px;
+	text-align: left;
 
 }
 .whoWeAre .row .col-md-3 p{
 
-    padding-top: 15px;
+	padding-top: 15px;
 
-  font-size: 16px;
-  font-family: "Lato";
-  color: rgb(80, 106, 133);
-  line-height: 1.5;
-  text-align: left;
- 
+	font-size: 16px;
+	font-family: "Lato";
+	color: rgb(80, 106, 133);
+	line-height: 1.5;
+	text-align: left;
+
 }
 .whoWeAre .row{
 	padding-top: 57px;
 }
 .heart{
 
-    padding-left: 23px;
-    padding-top: 4px;
+	padding-left: 23px;
+	padding-top: 4px;
 }
 .lamp{
-    padding-left: 39px;
-    padding-top: 4px;
+	padding-left: 39px;
+	padding-top: 4px;
 }
 .star{
-    padding-left: 29px;
-    padding-top: 4px;
+	padding-left: 29px;
+	padding-top: 4px;
 }
 .latestWorks{
 	min-height: 1270px;
 	background-color: rgb(242, 245, 247);
 }
 .latestWorks h1{
-  font-size: 44px;
-  font-family: "Lato";
-  color: rgb(80, 106, 133);
-  font-weight: bold;
-  line-height: 1.227;
-  text-align: center;
-  padding-top: 121px;
-  letter-spacing: 1px;
+	font-size: 44px;
+	font-family: "Lato";
+	color: rgb(80, 106, 133);
+	font-weight: bold;
+	line-height: 1.227;
+	text-align: center;
+	padding-top: 121px;
+	letter-spacing: 1px;
 }
 .latestWorks p{
 	padding-top: 18px;
 	font-size: 21.5px;
-  font-family: "Lato";
-  color: rgb(80, 106, 133);
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.1px;
+	font-family: "Lato";
+	color: rgb(80, 106, 133);
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.1px;
 
 }
 .latestWorks .col-md-6{
