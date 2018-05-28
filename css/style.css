@@ -1,8 +1,8 @@
 
 
 body{
-	width: 1920px;
 	font-family: "open sans", sans-serif;
+	min-width: 1920px;
 }
 ul{
 	list-style: none;
@@ -170,7 +170,7 @@ div.search{
 	line-height: 1.5;
 	text-align: center;
 }
-.whoWeAre .row h1{
+.whoWeAre .row .col-md-9 h1{
 	font-size: 26px;
 	font-family: "Lato";
 	color: rgb(80, 106, 133);
@@ -180,7 +180,7 @@ div.search{
 	text-align: left;
 
 }
-.whoWeAre .row .col-md-3 p{
+.whoWeAre .row .col-md-9 p{
 
 	padding-top: 15px;
 
@@ -236,7 +236,17 @@ div.search{
 	min-height: 501px;
 	border: solid black 1px;
 }
-
+ul.boozzy{
+	list-style: none;
+	display: inline;
+}
+.list_item{
+	display: inline-block;
+	width: 32.333%;
+}
+.list_item h1{
+	padding: 0px;
+}
 
 
 
