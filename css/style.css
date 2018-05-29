@@ -1,8 +1,10 @@
 
-
+* {
+	box-sizing: border-box;
+}
 body{
 	font-family: "open sans", sans-serif;
-	min-width: 1920px;
+	
 }
 ul{
 	list-style: none;
@@ -194,18 +196,7 @@ div.search{
 .whoWeAre .row{
 	padding-top: 57px;
 }
-.heart{
 
-	padding-left: 23px;
-	padding-top: 4px;
-}
-.lamp{
-	padding-left: 39px;
-	padding-top: 4px;
-}
-.star{
-	padding-left: 29px;
-	padding-top: 4px;
 }
 .latestWorks{
 	min-height: 1270px;
@@ -236,17 +227,70 @@ div.search{
 	min-height: 501px;
 	border: solid black 1px;
 }
-ul.boozzy{
+.whoWeAreUl ul{
 	list-style: none;
-	display: inline;
+	padding: 0;
+	margin: 0;  
+	font-size: 0;
 }
 .list_item{
 	display: inline-block;
-	width: 32.333%;
+	width: 33.333%;
+	position: relative;
+
+
 }
-.list_item h1{
+.list_text h1{
+	text-align: left;
 	padding: 0px;
+	font-size: 26px;
+	font-family: "Lato";
+	color: rgb(80, 106, 133);
+	font-weight: bold;
+	line-height: 1.227;
 }
+.list_text p{
+	font-size: 16px;
+	font-family: "Lato";
+	color: rgb(80, 106, 133);
+	line-height: 1.5;
+	text-align: left;
+	padding-top: 13px;	
+}
+li.list_item{
+
+	position: relative;
+	width: 33.333%;
+	font-size: 12px;
+	display: inline-block;
+}
+.list_img{
+	position: absolute;
+
+}
+.list_text{
+	padding-left: 100px;
+}
+.whoWeAreUl{
+	padding: 57px 0px 0px 0px;
+}
+.list_item2{
+	padding-left: 11px;
+}
+.list_item3{
+	padding-left: 19px;
+}
+.heart{
+	padding-left: 7px;
+	padding-top: 4px;
+}
+.lamp{
+	padding-left: 23px;
+	padding-top: 4px;
+}
+.star{
+	padding-left: 15px;
+	padding-top: 4px;
 
 
 
