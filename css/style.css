@@ -258,18 +258,19 @@ div.search{
 	padding-top: 13px;	
 }
 li.list_item{
-
+padding-left: 99px;
 	position: relative;
-	width: 33.333%;
+	width: 30.8%;
 	font-size: 12px;
 	display: inline-block;
 }
+.list_item + .list_item{
+ margin-left: 39px;
+}
 .list_img{
 	position: absolute;
+	left: 0;
 
-}
-.list_text{
-	padding-left: 100px;
 }
 .whoWeAreUl{
 	padding: 57px 0px 0px 0px;
@@ -291,6 +292,7 @@ li.list_item{
 .star{
 	padding-left: 15px;
 	padding-top: 4px;
+}
 
 
 
