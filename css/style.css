@@ -63,30 +63,24 @@ ul.nav li a{
 	font-weight: bold;
 }
 div.search{
-	position:absolute;
-	right: 0;
-	padding-top: 24px;
-	padding-right: 22px;
 	color: #506a85;
+	margin-right: 22px;
 }
 div.search a{
 	text-decoration: none;
+	color: #506a85;
 }
 div.logo{
 	margin-right: 60px;
-	padding-top: 13px;
 }
 div.container{
 	max-width: 1200px;
-}
-div.menu{
-	padding-top: 3px;
-	padding-left: 6px;
 }
 
 ul.nav li a{
 	color: #506a85;
 	text-decoration: none;
+	transition: 1s;
 }
 ul.nav li a:hover{
 	color: rgb(115, 135, 156);
@@ -125,6 +119,12 @@ ul.nav li a:hover{
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 1.2;
+		transition: 1s;
+}
+.getStart:hover {
+	color: rgb(0, 188, 156);
+	background-color: #fff;
+	cursor: pointer;
 }
 
 .hero button{
@@ -133,16 +133,10 @@ ul.nav li a:hover{
 	box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15);
 	width: 295px;
 	height: 65px;
-	margin-top: 42px;
+	margin-top: 40px;
 	border: none;
 }
-.getStart:hover {
-	color: rgb(0, 188, 156);
-	background-color: #fff;
-	cursor: pointer;
-	transition: 1s;
 
-}
 
 .who-we-are{
 	min-height: 672px;
@@ -223,11 +217,12 @@ ul.nav li a:hover{
 	text-align: left;
 	padding-top: 13px;
 	opacity: 0.5;
+		transition: 0.6s;
 }
 .list_text p:hover{
 	opacity: 1;
 	color: rgb(80, 106, 133);
-	transition: 0.6s;
+
 	cursor: pointer;
 }
 li.list_item{
@@ -329,14 +324,15 @@ a.bcgr1, a.bcgr2{
 		position: absolute;
 		width: 570px;
 		height: 390px;
+			transition: .5s;
 	}
 a.bcgr1:hover .background1{
 		background-color: rgb(0, 188, 156, 0.6);
-		transition: .5s;
+	
 	}
 a.bcgr1:hover .bcgr1-h2{
 		color: #00bc9c;
-		transition: .5s;
+	
 	}
 .background2{
 		position: absolute;
@@ -355,6 +351,7 @@ a.bcgr2:hover .bcgr2-h2{
 		position: absolute;
 		width: 570px;
 		height: 390px;
+			transition: .5s;
 }
 .background2:hover{
 		background-color: rgb(0, 188, 156, 0.8);
@@ -421,11 +418,12 @@ a.bcgr2:hover .bcgr2-h2{
 		margin: 22px 0px 19px 0px;
 		width: 129px;
 		height: 32px;
+			transition: 0.6s;
 		background-image: url("../img/footerlogo.png");
 	}
 	.footerlogo:hover{
 		opacity: 0.7;
-		transition: 0.6s;
+	
 	}
 	footer h3{
 		letter-spacing: 1.5px;
@@ -437,10 +435,10 @@ a.bcgr2:hover .bcgr2-h2{
 		line-height: 1.375;
 		text-align: left;
 		margin: 22px 0px 16px 0px;
+		transition: 0.7s;
 	}
 	.footblock h3:hover{
 		letter-spacing: 3px;
-		transition: 0.7s;
 	}
 	.footblock p{
 		font-size: 14px;
@@ -450,7 +448,7 @@ a.bcgr2:hover .bcgr2-h2{
 		text-align: left;
 		letter-spacing: 0.1px;
 		padding: 0px;
-		margin: 0px;
+		margin: 0px 0px 14px 0px;
 	}
 	p.padd{
 		margin: 0px 0px 15px 0px;
@@ -463,16 +461,22 @@ a.bcgr2:hover .bcgr2-h2{
 		text-align: left;
 		letter-spacing: 0.7px;
 		text-decoration: none;
+		transition: 0.5s;
 	}
 	.footblock a:hover{
 		color: rgb(0, 188, 156);
 		font-weight: bold;
+		transition: 0.5s;
+	}
+	.footblock a:hover .pad8{
+		padding-left: 8px;
+		transition: 0.5s;
 	}
 	.footblock ul{
-		padding: 0px 0px 0px 0px;
+		padding: 0px;
 		margin: 0px;
 	}
-	.footblock li{
+	li.fb{
 		display: inline-block;
 	}
 	.input-group{
@@ -522,42 +526,27 @@ a.bcgr2:hover .bcgr2-h2{
 		text-align: left;
 		letter-spacing: 0.1px;
 	}
-	
-	.carousel-bcgr1,
-	.carousel-bcgr2,
-	.carousel-bcgr3,
-	.carousel-bcgr4{
+	.carousel-bg{
 		width: 270px;
-		min-height: 185px;
+		height: 185px;
 		position: absolute;
-
+		transition: 0.5s;
 	}
-	.carousel-bcgr1:hover,
-	.carousel-bcgr2:hover,
-	.carousel-bcgr3:hover,
-	.carousel-bcgr4:hover{
+	li.bg:hover .carousel-bg{
 		background-color: rgb(0, 188, 156, 0.6);
-		transition: .5s;
-		cursor: pointer;
 	}
 	.fb{
-		margin-top: 5px;
-	}
-	.footblock-bcgr1,
-	.footblock-bcgr2,
-	.footblock-bcgr3,
-	.footblock-bcgr4{
+		margin: 5px 2px 0px 0px;
+}
+	.footblock-bg{
 		width: 125px;
 		height: 85px;
 		position: absolute;
-	}
-	.footblock-bcgr1:hover,
-	.footblock-bcgr2:hover,
-	.footblock-bcgr3:hover,
-	.footblock-bcgr4:hover{
-		background-color: rgb(0, 188, 156, 0.6);
-		transition: .5s;
+		transition: 0.6s;
 		cursor: pointer;
+	}
+	li.fb:hover .footblock-bg{
+		background-color: rgb(0, 188, 156, 0.6);
 	}
 
 .footer-menu li{
@@ -583,10 +572,11 @@ div.foot-end .container{
 li.ft a{
 	color: #506a85;
 	text-decoration: none;
+	transition: 0.5s;
 }
 li.ft a:hover{
-	color: #fff;
-	transition: 0.6s;
+	color: #0ebfa2;
+	transition: 0.5s;
 }
 div.search a{
 	text-decoration: none;
@@ -598,7 +588,58 @@ div.search a{
 	align-items: center;
 
 }
-
+.navbar-inner{
+	width: 100%;
+		display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu{
+	margin-right: 16%;
+}
+.footblock ul i{
+	margin-right: 5px;
+}
+.footblock ul{
+			font-size: 14px;
+		font-family: "Lato";
+		color: #a3b1bf;
+}
+.navbar-header-contact li a{
+ text-decoration: none;
+ color: #506a85;
+ transition: 0.5s;
+}
+.navbar-header-contact li a:hover{
+	color: #0ebfa2;
+}
+div.col-md-3.footblock ul li a{
+	transition: 0.6s;
+}
+.facebook:hover{
+	background-color: blue;
+	color: #fff;
+}
+.google:hover{
+	background-color: #de5745;
+	color: #fff;
+}
+.twitter:hover{
+	background-color: #2fbbed;
+	color: #fff;
+}
+.pinterest:hover{
+	background-color: #d94348;
+	color: #fff;
+}
+.behance:hover{
+	background-color: #3079ff;
+	color: #fff;
+}
+.dribbble:hover{
+	background-color: #eb6397;
+	color: #fff;
+}
 
 
 
