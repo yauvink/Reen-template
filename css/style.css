@@ -15,7 +15,6 @@ ul{
 }
 
 .navbar-header{
-	min-height: 40px;
 	background-color: #f5f7fa;
 	border-bottom: 1px solid #e6e9ed;
 }
@@ -29,16 +28,9 @@ li.nav{
 }
 ul.navbar-header-contact li{
 	display: inline;
-	padding-right: 19px;
+	padding-right: 25px;
 }
-div.social{
-	padding: 1px 0px 0px 0px;
-	display: inline;
-	float: right;
-}
-div.contact{
-	display: inline;
-}
+
 
 ul.navbar-header-social li{
 	display: inline;
@@ -51,20 +43,16 @@ ul.navbar-header-contact li i{
 
 ul.navbar-header-contact{
 	margin-bottom: 0px;
-	padding-left: 15px;
-
 }
 ul.navbar-header-social{
-	padding-right: 17px;
+	margin: 0px 3px 0px 0px;
+
 }
 .navbar-header .row{
 	justify-content: space-between;
 }
-
-
-
 .navbar-header{
-	font-size: 12px;
+	font-size: 11px;
 	color: #506a85;
 }
 ul.nav li{
@@ -86,7 +74,7 @@ div.search a{
 }
 div.logo{
 	margin-right: 60px;
-	padding-top: 15px;
+	padding-top: 13px;
 }
 div.container{
 	max-width: 1200px;
@@ -152,6 +140,7 @@ ul.nav li a:hover{
 	color: rgb(0, 188, 156);
 	background-color: #fff;
 	cursor: pointer;
+	transition: 1s;
 
 }
 
@@ -422,6 +411,7 @@ a.bcgr2:hover .bcgr2-h2{
 		color: #fff;
 		background-color: #17a78b;
 		cursor: pointer;
+		transition: 1s;
 	}
 
 	footer .row{
@@ -435,6 +425,7 @@ a.bcgr2:hover .bcgr2-h2{
 	}
 	.footerlogo:hover{
 		opacity: 0.7;
+		transition: 0.6s;
 	}
 	footer h3{
 		letter-spacing: 1.5px;
@@ -539,6 +530,7 @@ a.bcgr2:hover .bcgr2-h2{
 		width: 270px;
 		min-height: 185px;
 		position: absolute;
+
 	}
 	.carousel-bcgr1:hover,
 	.carousel-bcgr2:hover,
@@ -567,12 +559,7 @@ a.bcgr2:hover .bcgr2-h2{
 		transition: .5s;
 		cursor: pointer;
 	}
-.boz{
-	display: flex;
-}
-.contact, .social{
-	margin: auto;
-}
+
 .footer-menu li{
 	display: inline;
 }
@@ -599,11 +586,18 @@ li.ft a{
 }
 li.ft a:hover{
 	color: #fff;
+	transition: 0.6s;
 }
 div.search a{
 	text-decoration: none;
 }
+.navbar-header-inner{
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
+}
 
 
 
