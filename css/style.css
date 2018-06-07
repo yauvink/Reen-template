@@ -133,7 +133,7 @@ ul.nav li a:hover{
 	box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15);
 	width: 295px;
 	height: 65px;
-	margin-top: 40px;
+	margin-top: 58px;
 	border: none;
 }
 
@@ -454,7 +454,7 @@ a.bcgr2:hover .bcgr2-h2{
 		margin: 0px 0px 15px 0px;
 	}
 	.footblock a{
-		font-size: 14px;
+		font-size: 12px;
 		font-family: "Lato";
 		color: #a3b1bf;
 		line-height: 1.6;
@@ -672,8 +672,47 @@ input.form-control{
 	background-color: #506a85;
 	color: #17a78b;
 }
+.hero p{
+		width: 85%;
+		margin: auto;
+	}
 
+@media (min-width: 768px){
+	.hero .container{
+		/*display: flex;*/
 
+	}
+	.hero{
+		padding: 120px 0px 120px 0px;
+	}
+	div.hero h1{
+		width: 60%;
+		margin: auto;
+		font-size: 88px;
+	}
+	.hero p{
+		padding-top: 20px;
+		font-size: 50px;
+		width: 85%;
+		margin: auto;
+	}
+	.hero button{
+	width: 395px;
+	height: 90px;
+	font-size: 30px;
+	}
+	.who-we-are h1{
+		width: 70%;
+		margin: auto;
+		font-size: 88px;
+	}
+	.who-we-are p{
+				padding-top: 20px;
+		font-size: 47px;
+		width: 85%;
+		margin: auto;
+	}
+}
 
 
 
