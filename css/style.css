@@ -26,6 +26,12 @@ ul{
 li.nav{
 	display: inline;
 }
+ul.nav li:last-child{
+	margin-left: 205px;
+}
+.menu{
+	float: right;
+}
 ul.navbar-header-contact li{
 	display: inline;
 	padding-right: 25px;
@@ -34,7 +40,8 @@ ul.navbar-header-contact li{
 
 ul.navbar-header-social li{
 	display: inline;
-	padding: 8px;
+	padding-left: 8px;
+	padding-top: 5px;
 }
 
 ul.navbar-header-contact li i{
@@ -45,9 +52,21 @@ ul.navbar-header-contact{
 	margin-bottom: 0px;
 }
 ul.navbar-header-social{
-	margin: 0px 3px 0px 0px;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
 
 }
+
+.navbar-header-social a{
+	display: inline-block;
+	border: 1px solid black;
+	width: 27px;
+	height: 40px;
+}
+.navbar-header-social li{
+	line-height: 27px;
+}
+
 .navbar-header .row{
 	justify-content: space-between;
 }
@@ -69,9 +88,6 @@ div.search{
 div.search a{
 	text-decoration: none;
 	color: #506a85;
-}
-div.logo{
-	margin-right: 60px;
 }
 div.container{
 	max-width: 1200px;
@@ -111,7 +127,10 @@ ul.nav li a:hover{
 	padding-top: 4px;
 	color: rgb(255, 255, 255);
 	opacity: 0.6;
+	width: 950px;
+	margin: auto;
 }
+
 .getStart{
 	font-size: 16px;
 	font-family: "SourceSansPro";
@@ -141,7 +160,7 @@ ul.nav li a:hover{
 .who-we-are{
 	min-height: 672px;
 	background-color: #fff;
-	padding: 0px 0px 75px 0px;
+	padding: 120px 0px 75px 0px;
 }
 .who-we-are h1{
 	font-size: 44px;
@@ -150,7 +169,6 @@ ul.nav li a:hover{
 	font-weight: bold;
 	line-height: 1.227;
 	text-align: center;
-	padding-top: 120px;
 	letter-spacing: 1px;
 }
 .who-we-are p{
@@ -196,9 +214,14 @@ ul.nav li a:hover{
 .list_item{
 	display: inline-block;
 	width: 33.333%;
-	position: relative;
-
-
+	/*position: relative;*/
+}
+.list_text{
+	float: right;
+	width: calc(100% - 100px);
+}
+.list_text + .list_text{
+	margin-left: 80px;
 }
 .list_text h1{
 	text-align: left;
@@ -226,18 +249,22 @@ ul.nav li a:hover{
 	cursor: pointer;
 }
 li.list_item{
-	padding-left: 99px;
+	/*padding-left: 99px;*/
 	position: relative;
 	width: 30.8%;
 	font-size: 12px;
 	display: inline-block;
 }
-.list_item + .list_item{
+/*.list_item + .list_item{
 	margin-left: 3.35%;
+}*/
+.list_text{
+/*	margin-left: 60px;*/
 }
 .list_img{
-	position: absolute;
+	float: left;
 	left: 0;
+	width: 60px;
 
 }
 .who-we-are-ul{
@@ -263,7 +290,7 @@ li.list_item{
 	top: 4px;
 }
 .latest_works{
-	min-height: 1270px;
+	padding: 121px 0px 180px 0px;
 	background-color: #f2f5f7;
 }
 .latest_works h1{
@@ -273,7 +300,6 @@ li.list_item{
 	font-weight: bold;
 	line-height: 1.227;
 	text-align: center;
-	padding-top: 121px;
 	letter-spacing: 1px;
 }
 .latest_works p{
@@ -317,45 +343,15 @@ li.list_item{
 .latest_works figcaption p{
 	margin-top: 9px;
 }
-a.bcgr1, a.bcgr2{
-		text-decoration: none;
-	}
-	.background1{
-		position: absolute;
-		width: 570px;
-		height: 390px;
-			transition: .5s;
-	}
-a.bcgr1:hover .background1{
-		background-color: rgb(0, 188, 156, 0.6);
-	
-	}
-a.bcgr1:hover .bcgr1-h2{
-		color: #00bc9c;
-	
-	}
-.background2{
-		position: absolute;
-		width: 570px;
-		height: 390px;
-	}
-a.bcgr2:hover .background2{
-		background-color: rgb(0, 188, 156, 0.6);
-		transition: .5s;
-	}
-a.bcgr2:hover .bcgr2-h2{
-		color: #00bc9c;
-		transition: .5s;
-	}
-.background2{
-		position: absolute;
-		width: 570px;
-		height: 390px;
-			transition: .5s;
+.checkout figcaption h2:hover{
+	color: rgb(0, 188, 156);
+	transition: 0.3s;
 }
-.background2:hover{
-		background-color: rgb(0, 188, 156, 0.8);
+.checkout figcaption a{
+	text-decoration: none;
 }
+
+
 .carousel li{
 		display: inline-block;
 	}
@@ -372,7 +368,6 @@ a.bcgr2:hover .bcgr2-h2{
 		font-weight: bold;
 		line-height: 1.227;
 		text-align: center;
-		padding-top: 120px;
 		letter-spacing: 1px;
 	}
 	.get_in_touch p{
@@ -387,7 +382,7 @@ a.bcgr2:hover .bcgr2-h2{
 	}
 	.get_in_touch{
 		text-align: center;
-		padding: 0px 0px 130px 0px;
+		padding: 120px 0px 130px 0px;
 	}
 	.get_in_touch_button{
 		border-radius: 3px;
@@ -526,28 +521,72 @@ a.bcgr2:hover .bcgr2-h2{
 		text-align: left;
 		letter-spacing: 0.1px;
 	}
-	.carousel-bg{
+/*	.carousel-bg{
 		width: 270px;
 		height: 185px;
 		position: absolute;
 		transition: 0.5s;
-	}
+	}*/
 	li.bg:hover .carousel-bg{
 		background-color: rgb(0, 188, 156, 0.6);
 	}
-	.fb{
-		margin: 5px 2px 0px 0px;
+	li.bg{
+		display: inline-block;
+  position: relative;
+	}
+	li.bg a::after{
+	content: "";
+	position: absolute;
+	background-color: rgb(0, 188, 156);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.4s;
+	}
+	li.bg a:hover:after{
+		opacity: 0.5;
+	}
+	li.fb a:after{
+	content: "";
+	position: absolute;
+	background-color: rgb(0, 188, 156);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.4s;
 }
-	.footblock-bg{
-		width: 125px;
-		height: 85px;
-		position: absolute;
-		transition: 0.6s;
-		cursor: pointer;
-	}
-	li.fb:hover .footblock-bg{
-		background-color: rgb(0, 188, 156, 0.6);
-	}
+	li.fb a:hover:after{
+		opacity: 0.5;
+}
+	.fb{
+	display: inline-block;
+	position: relative;
+	margin: 5px 2px 0px 0px;
+}
+.checkoutbg{
+	display: inline-block;
+	position: relative;
+
+}
+.checkoutbg a::after{
+	content: "";
+	position: absolute;
+	background-color: rgb(0, 188, 156);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.3s;
+}
+.checkoutbg a:hover:after{
+		opacity: 0.5;
+}
+.checkout:hover
 
 .footer-menu li{
 	display: inline;
@@ -593,9 +632,6 @@ div.search a{
 		display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-.menu{
-	margin-right: 16%;
 }
 .footblock ul i{
 	margin-right: 5px;
@@ -651,7 +687,7 @@ input.form-control{
 	background-color: #fff;
 }
 #go-to-top{
-	display: none; /* Hidden by default */
+	display: none; /* Hidden by default 
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
@@ -672,12 +708,36 @@ input.form-control{
 	background-color: #506a85;
 	color: #17a78b;
 }
-.hero p{
-		width: 85%;
-		margin: auto;
-	}
+/*.navbar-header-social{
+		display: inline-block;
+	position: relative;
 
-@media (min-width: 768px){
+}
+.navbar-header-social li::after{
+	content: "";
+	position: absolute;
+	background-color: rgb(0, 188, 156);
+	width: 16.6666%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.3s;
+
+}
+.navbar-header-social li:hover:after{
+		opacity: 0.5;
+}*/
+
+
+
+
+
+/*======================= MEDIA ========================*/
+
+
+
+@media (max-width: 768px){
 	.hero .container{
 		/*display: flex;*/
 
