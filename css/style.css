@@ -39,9 +39,11 @@ ul.navbar-header-contact li{
 
 
 ul.navbar-header-social li{
-	display: inline;
-	padding-left: 8px;
-	padding-top: 5px;
+	display: inline-block;
+	padding-left: 9px;
+	line-height: 40px;
+	height: 100%;
+	width: 100%;
 }
 
 ul.navbar-header-contact li i{
@@ -53,14 +55,15 @@ ul.navbar-header-contact{
 }
 ul.navbar-header-social{
 	height: 100%;
-	margin: 0px 0px 0px 0px;
+	margin: 0px;
+	font-size: 0px;
 
 }
 
 .navbar-header-social a{
 	display: inline-block;
-	border: 1px solid black;
-	width: 27px;
+	/*border: 1px solid black;*/
+	width: 30px;
 	height: 40px;
 }
 .navbar-header-social li{
@@ -70,7 +73,7 @@ ul.navbar-header-social{
 .navbar-header .row{
 	justify-content: space-between;
 }
-.navbar-header{
+.navbar-header ul li{
 	font-size: 11px;
 	color: #506a85;
 }
@@ -203,9 +206,6 @@ ul.nav li a:hover{
 .who-we-are .row{
 	padding-top: 57px;
 }
-
-}
-
 .who-we-are-ul ul{
 	list-style: none;
 	padding: 0;
@@ -214,14 +214,14 @@ ul.nav li a:hover{
 .list_item{
 	display: inline-block;
 	width: 33.333%;
-	/*position: relative;*/
+/*	position: relative;*/
 }
 .list_text{
 	float: right;
 	width: calc(100% - 100px);
 }
-.list_text + .list_text{
-	margin-left: 80px;
+.list_item + .list_item{
+	margin-left: 44px;
 }
 .list_text h1{
 	text-align: left;
@@ -390,7 +390,7 @@ li.list_item{
 		box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15);
 		width: 150px;
 		height: 50px;
-		margin-top: 25px;
+		margin-top: 24px;
 		border: none;
 		font-size: 14px;
 		font-family: "SourceSansPro";
@@ -407,7 +407,7 @@ li.list_item{
 	}
 
 	footer .row{
-		padding: 48px 0px 75px 0px;
+		padding: 48px 0px 74px 0px;
 	}
 	.footerlogo{
 		margin: 22px 0px 19px 0px;
@@ -513,7 +513,10 @@ li.list_item{
 	.foot-end{
 		background-color: #283645;
 	}
-	.foot-end ul{
+	.footer-menu ul li{
+		display: inline;
+	}
+	.footer-menu ul{
 		font-size: 13px;
 		font-family: "Lato";
 		color: #a3b1bf;
@@ -652,10 +655,19 @@ div.search a{
 div.col-md-3.footblock ul li a{
 	transition: 0.6s;
 }
+/*a li i.fa-facebook::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+position: absolute
+;	top: 0;
+	left: 0;
+}*/
 .facebook:hover{
 	background-color: blue;
 	color: #fff;
 }
+
 .google:hover{
 	background-color: #de5745;
 	color: #fff;
@@ -687,12 +699,12 @@ input.form-control{
 	background-color: #fff;
 }
 #go-to-top{
-	display: none; /* Hidden by default 
+	display: none; /* Hidden by default */
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
 	z-index: 99; /* Make sure it does not overlap */
-	border: none; /* Remove borders */
+	border: none;/*  Remove borders */
 	outline: none; /* Remove outline */
 	background-color: #3c5065;
 	opacity: 0.7; /*прозрачность всего элемента*/
@@ -708,28 +720,28 @@ input.form-control{
 	background-color: #506a85;
 	color: #17a78b;
 }
-/*.navbar-header-social{
-		display: inline-block;
-	position: relative;
-
-}
-.navbar-header-social li::after{
-	content: "";
+.btn-subscribe{
 	position: absolute;
-	background-color: rgb(0, 188, 156);
-	width: 16.6666%;
-	height: 100%;
+	height: 27px;
+	width: 88px;
+	right: 0;
 	top: 0;
-	left: 0;
-	opacity: 0;
-	transition: 0.3s;
-
+	margin: 3px 5px 3px 0px;
+	background-color: #17a78b;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 27px;
+	padding: 0;
 }
-.navbar-header-social li:hover:after{
-		opacity: 0.5;
-}*/
-
-
+.btn-subscribe:hover{
+	background-color: #06967a;
+}
+input.form-control{
+	border-radius: 3px!important;
+}
 
 
 
