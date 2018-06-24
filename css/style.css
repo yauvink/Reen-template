@@ -768,6 +768,9 @@ position: relative;
 .menu-btn_active span:after {
 	transform: rotate(-45deg);
 }
+.menu-mobile{
+	display: none;
+}
 
 
 
