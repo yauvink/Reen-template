@@ -781,7 +781,7 @@ position: relative;
 
 	}
 	.hero{
-		padding: 60px 0px 60px 0px;
+		padding: 180px 0px 60px 0px;
 	}
 	div.hero h1{
 
@@ -810,7 +810,7 @@ position: relative;
 	}
 	.who-we-are p{
 		text-align: center;
-		font-size: 22px;
+		font-size: 18px;
 		display: inline;
 
 	}
@@ -853,12 +853,56 @@ position: relative;
 	.navbar-header-contact li{
 		display: block;
 	}
-	ul.nav{
+	.menu{
 		display: none;
 	}
 	.menu-btn{
 		display: block;
-
+	}
+	.navbar-header-inner{
+		display: none;
+	}
+	.navbar{
+		top: 0;
+		position: fixed;
+		width: 100%;
+		background-color: #fff;
+		min-height: 95px;
+		z-index: 98;
+	}
+	
+	.menu-mobile{
+		transform: translateX(100%);
+		transition: 0.5s;
+		width: 100%;
+		height: 100%;
+		background-color: #F5F7FA;
+		position: fixed;
+		top: 95px;
+		left: 0;
+		z-index: 9;
+		border-top: 2px solid rgb(80, 106, 133, 0.5);
+		display: flex;
+	}
+	.menu-mobile_active{
+		transform: translateX(0%);
+	}
+	.menu-mobile ul{
+		width: 100%;
+	}
+	.menu-mobile li{
+		margin: 15px 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 100%;
+	}
+	.menu-mobile li::after{
+		content: "";
+		display: block;
+		width: 80%;
+		height: 2px;
+		background-color: rgb(80, 106, 133, 0.3);
+		border-radius: 2px;
 	}
 }
 
