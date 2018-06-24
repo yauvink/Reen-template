@@ -112,6 +112,7 @@ ul.nav li a:hover{
 	background-image: url("../img/image.png");
 	padding-bottom: 301px;
 	padding-top: 285px;
+	background-position: center;
 }
 .hero h1{
 	font-size: 78px;
@@ -153,7 +154,7 @@ ul.nav li a:hover{
 	border-radius: 3px;
 	background-color: rgb(0, 188, 156);
 	box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15);
-	width: 295px;
+	min-width: 295px;
 	height: 65px;
 	margin-top: 58px;
 	border: none;
@@ -173,9 +174,10 @@ ul.nav li a:hover{
 	line-height: 1.227;
 	text-align: center;
 	letter-spacing: 1px;
+	margin-bottom: 28px;
 }
 .who-we-are p{
-	padding-top: 20px;
+	margin: 0;
 	font-size: 21.5px;
 	font-family: "Lato";
 	color: rgb(80, 106, 133);
@@ -211,19 +213,11 @@ ul.nav li a:hover{
 	padding: 0;
 	margin: 0;
 }
-.list_item{
-	display: inline-block;
-	width: 33.333%;
-/*	position: relative;*/
-}
-.list_text{
-	float: right;
-	width: calc(100% - 100px);
-}
+
 .list_item + .list_item{
-	margin-left: 44px;
+	margin-left: 40px;
 }
-.list_text h1{
+.list_text .list_title{
 	text-align: left;
 	padding: 0px;
 	font-size: 26px;
@@ -248,25 +242,14 @@ ul.nav li a:hover{
 
 	cursor: pointer;
 }
-li.list_item{
-	/*padding-left: 99px;*/
+.list_item{
+ vertical-align: top;
 	position: relative;
-	width: 30.8%;
+	width: calc(33.33% - 27px);
 	font-size: 12px;
 	display: inline-block;
 }
-/*.list_item + .list_item{
-	margin-left: 3.35%;
-}*/
-.list_text{
-/*	margin-left: 60px;*/
-}
-.list_img{
-	float: left;
-	left: 0;
-	width: 60px;
 
-}
 .who-we-are-ul{
 	font-size: 0;
 	margin-top: 73px;
@@ -276,18 +259,6 @@ li.list_item{
 }
 .list_item3{
 	padding-left: 19px;
-}
-.heart{
-	left: 7px;
-	top: 4px;
-}
-.lamp{
-	left: 23px;
-	top: 4px;
-}
-.star{
-	left: 15px;
-	top: 4px;
 }
 .latest_works{
 	padding: 121px 0px 180px 0px;
@@ -314,9 +285,8 @@ li.list_item{
 }
 .latest_works .checkout{
 	background-color: #fff;
-	min-height: 501px;
 	border: solid #e6e9ed 1px;
-	margin: 0px 14px 0px 14px;
+	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 }
 .latest_works .row{
@@ -354,12 +324,13 @@ li.list_item{
 
 .carousel li{
 		display: inline-block;
+		margin: 15px;
 	}
 .carousel{
-		padding: 25px 0px 0px 15px;
+		padding: 22px 0px 0px 0px;
 	}
 .bg + .bg{
-		margin-left: 26px;
+		margin-left: 10px;
 	}
 .get_in_touch h1{
 		font-size: 44px;
@@ -407,7 +378,7 @@ li.list_item{
 	}
 
 	footer .row{
-		padding: 48px 0px 74px 0px;
+		padding: 48px 0px 66px 0px;
 	}
 	.footerlogo{
 		margin: 22px 0px 19px 0px;
@@ -443,7 +414,7 @@ li.list_item{
 		text-align: left;
 		letter-spacing: 0.1px;
 		padding: 0px;
-		margin: 0px 0px 14px 0px;
+		margin: 0px 0px 21px 0px;
 	}
 	p.padd{
 		margin: 0px 0px 15px 0px;
@@ -461,11 +432,13 @@ li.list_item{
 	.footblock a:hover{
 		color: rgb(0, 188, 156);
 		font-weight: bold;
-		transition: 0.5s;
+		
+	}
+	.footblock a .pad8{
+		transition: transform .5s;
 	}
 	.footblock a:hover .pad8{
-		padding-left: 8px;
-		transition: 0.5s;
+		transform: translateX(8px);
 	}
 	.footblock ul{
 		padding: 0px;
@@ -573,6 +546,10 @@ li.list_item{
 .checkoutbg{
 	display: inline-block;
 	position: relative;
+}
+.checkoutbg img{
+	max-width: 100%;
+	height: auto;
 
 }
 .checkoutbg a::after{
@@ -594,16 +571,16 @@ li.list_item{
 .footer-menu li{
 	display: inline;
 }
-.rights, .footer-menu{
-	display: inline-block;
-	margin: auto;
+
+
+.foot-end-inner{
+	min-height: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
-.footer-menu{
-	float: right;
-}
-.foot-end{
-	height: 90px;
-	display: flex;
+.foot-end-inner ul{
+	margin: 0;
 }
 div.foot-end .container{
 	margin: auto;
@@ -655,14 +632,7 @@ div.search a{
 div.col-md-3.footblock ul li a{
 	transition: 0.6s;
 }
-/*a li i.fa-facebook::after{
-	content: "";
-	width: 100%;
-	height: 100%;
-position: absolute
-;	top: 0;
-	left: 0;
-}*/
+
 .facebook:hover{
 	background-color: blue;
 	color: #fff;
@@ -742,6 +712,23 @@ input.form-control{
 input.form-control{
 	border-radius: 3px!important;
 }
+.list_img{
+width: 77px;
+position: absolute;
+left: 0;
+top: 0;
+text-align: center;
+}
+.list_item{
+padding-left: 100px;
+position: relative;
+}
+.list_text{
+
+}
+.checkout figure{
+	margin-bottom: 31px;
+}
 
 
 
@@ -755,16 +742,16 @@ input.form-control{
 
 	}
 	.hero{
-		padding: 120px 0px 120px 0px;
+		padding: 60px 0px 60px 0px;
 	}
 	div.hero h1{
-		width: 60%;
+
 		margin: auto;
-		font-size: 88px;
+		font-size: 28px;
 	}
 	.hero p{
 		padding-top: 20px;
-		font-size: 50px;
+		font-size: 22px;
 		width: 85%;
 		margin: auto;
 	}
@@ -773,16 +760,62 @@ input.form-control{
 	height: 90px;
 	font-size: 30px;
 	}
+	.who-we-are{
+		padding: 30px 0px;
+	}
 	.who-we-are h1{
 		width: 70%;
 		margin: auto;
-		font-size: 88px;
+		font-size: 28px;
+		margin: 20px auto;
 	}
 	.who-we-are p{
-				padding-top: 20px;
-		font-size: 47px;
-		width: 85%;
-		margin: auto;
+		text-align: center;
+		font-size: 22px;
+		display: inline;
+
+	}
+	.list_item{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.list_item + .list_item {
+		margin: 0px 0px 40px 0px;
+	}
+	.hero button{
+		width: 60%;
+		font-size: 14px;
+		padding: 25px 20px;
+		height: auto;
+
+	}
+	.foot-end-inner{
+		display: block;
+	}
+	.foot-end-inner p{
+		padding: 15px 0px;
+		text-align: center;
+	}
+	.foot-end-inner ul{
+		padding-bottom: 15px;
+		text-align: center;
+	}
+	.checkoutbg img{
+	max-width: 100%;
+	height: auto;
+	}
+	.figure-inner{
+	display: flex;
+	justify-content: center;
+	}
+	.bg + .bg{
+		margin-left: 10;
+	}
+	.navbar-header-contact li{
+		display: block;
+	}
+	ul.nav{
+		display: none;
 	}
 }
 
