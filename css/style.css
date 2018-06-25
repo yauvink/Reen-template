@@ -99,10 +99,10 @@ div.container{
 ul.nav li a{
 	color: #506a85;
 	text-decoration: none;
-	transition: 1s;
+	transition: 0.3s;
 }
 ul.nav li a:hover{
-	color: rgb(115, 135, 156);
+	color: #0ebfa2;
 }
 .navbar{
 	color: #506a85;
@@ -771,6 +771,9 @@ position: relative;
 .menu-mobile{
 	display: none;
 }
+.slider{
+	padding-top: 80px;
+}
 
 
 
@@ -780,14 +783,11 @@ position: relative;
 
 @media (max-width: 768px){
 	.hero .container{
-		/*display: flex;*/
-
 	}
 	.hero{
 		padding: 180px 0px 60px 0px;
 	}
 	div.hero h1{
-
 		margin: auto;
 		font-size: 28px;
 	}
@@ -815,7 +815,6 @@ position: relative;
 		text-align: center;
 		font-size: 18px;
 		display: inline;
-
 	}
 	.list_item{
 		width: 100%;
@@ -829,7 +828,6 @@ position: relative;
 		font-size: 14px;
 		padding: 25px 20px;
 		height: auto;
-
 	}
 	.foot-end-inner{
 		display: block;
@@ -873,7 +871,6 @@ position: relative;
 		min-height: 95px;
 		z-index: 98;
 	}
-	
 	.menu-mobile{
 		transform: translateX(100%);
 		transition: 0.5s;
